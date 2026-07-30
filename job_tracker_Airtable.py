@@ -4,10 +4,10 @@ import time
 import requests
 from pyairtable import Api
 
+load_dotenv()
+
 # Local tracking file
 JOBS_FILE = "seen_jobs.json"
-
-load_dotenv()
 
 AIRTABLE_PAT = os.getenv("AIRTABLE_PAT")
 AIRTABLE_BASE_ID = "appQRa3hTnAIpEE2R"
